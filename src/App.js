@@ -12,6 +12,7 @@ const App = () => {
 
 	useEffect(() => {
 		getRecipes();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [query]);
 
 	const getRecipes = async () => {

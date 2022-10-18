@@ -5,8 +5,8 @@ const Recipe = ({ title, calories, image, ingredients }) => {
 		<div className={classes.recipe}>
 			<h1>{title}</h1>
 			<ul>
-				{ingredients.map((ingredient) => (
-					<li key={Math.random()}>
+				{ingredients.map((ingredient, i) => (
+					<li key={ingredient.foodId + i}>
 						<span>{ingredient.text}</span>
 					</li>
 				))}
